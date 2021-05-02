@@ -13,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1100,500);
+  createCanvas(1200,500);
   engine = Engine.create();
   world = engine.world;
 
@@ -21,8 +21,8 @@ function setup() {
 
   score = 0;
 
-  ground = new Ground(550,height,1100,20);
-  platform = new Ground(150, 405, 300, 170);
+  ground = new Ground(550,height,1200,20);
+  platform = new Ground(150, 405, 1200, 170);
   arrow = new Arrow(200, 200);
   slingshot = new SlingShot(arrow.body, {x:200, y:175})
   baloon1 = new balloon(900, 250);
